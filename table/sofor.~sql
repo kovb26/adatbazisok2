@@ -1,0 +1,9 @@
+create table sofor
+(
+       sofor_id                     number            not null  primary key
+       ,nev                         varchar2(40)      not null
+       ,szuletesi_ido               date              not null
+       ,jogositvany_ervenyesseg     date              not null
+       ,telefonszam                 number               not null
+)
+TABLESPACE users;
