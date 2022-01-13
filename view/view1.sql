@@ -1,3 +1,0 @@
-CREATE OR REPLACE VIEW view1 AS
-SELECT * FROM dual
-/

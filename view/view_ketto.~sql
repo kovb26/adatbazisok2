@@ -1,0 +1,9 @@
+CREATE OR REPLACE VIEW view_ketto AS
+select ju.marka, ju.rendszam, ju.evjarat
+  from szerelveny sz
+  join jarmu ju
+    on ju.rendszam = sz.utanfuto_rendszam
+ where EXTRACT(YEAR FROM CURRENT_DATE) - ju.evjarat > 10
+ order by ju.jarmu_id;
+
+select * from view_ketto;

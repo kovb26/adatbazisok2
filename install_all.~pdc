@@ -1,0 +1,50 @@
+-- Táblák instalálása...
+@./table/create/jarmu.sql
+@./table/create/szerelveny.sql
+@./table/create/sofor.sql
+@./table/create/menetlevel.sql
+@./table/create/kereskedes.sql
+
+
+@./table/create_h/jarmu_h.sql
+@./table/create_h/szerelveny_h.sql
+@./table/create_h/sofor_h.sql
+@./table/create_h/menetlevel_h.sql
+@./table/create_h/kereskedes_h.sql
+
+-- Audit létrehozásáa
+
+@./sequence/jarmu_seq.sql
+@./sequence/szerelveny_seq.sql
+@./sequence/sofor_seq.sql
+@./sequence/menetlevel_seq.sql
+@./sequence/kereskedes_seq.sql
+
+
+@./trigger/jarmu_trg.trg
+@./trigger/szerelveny_trg.trg
+@./trigger/sofor_trg.trg
+@./trigger/menetlevel_trg.trg
+@./trigger/kereskedes_trg.trg
+
+@./trigger/history/jarmu_h_trg.trg
+@./trigger/history/szerelveny_h_trg.trg
+@./trigger/history/sofor_h_trg.trg
+@./trigger/history/menetlevel_h_trg.trg
+@./trigger/history/kereskedes_h_trg.trg
+
+--Táblák feltöltése
+
+@./table/insert/jarmu_insert.sql
+@./table/insert/szerelveny_insert.sql
+@./table/insert/sofor_insert.sql
+@./table/insert/menetlevel_insert.sql
+@./table/insert/kereskedes_insert.sql
+
+-- Viewk: 
+
+@./view/view_egy.sql
+@./view/view_ketto.sql
+@./view/view_harom.sql
+
+

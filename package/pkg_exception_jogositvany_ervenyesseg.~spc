@@ -1,0 +1,9 @@
+create or replace package pkg_exception_jogositvany_ervenyesseg is
+
+
+   sofor_not_found_exception EXCEPTION;
+       gc_sofor_not_found_exc_code constant number := -20000;
+       pragma exception_init(sofor_not_found_exception, -20000);
+
+end pkg_exception_jogositvany_ervenyesseg;
+/

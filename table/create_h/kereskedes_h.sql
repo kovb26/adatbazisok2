@@ -5,7 +5,7 @@ create table kereskedes_h
        ,orszag           varchar2(40)       
        ,varos            varchar2(40)       
        ,tulaj_nev        varchar2(40)       
-       ,telefonszam      number             
+       ,telefonszam      varchar2(11)             
        ,last_mod         timestamp(6)
        ,created          timestamp(6)
        ,mod_user         varchar2(300)

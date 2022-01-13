@@ -1,0 +1,10 @@
+create or replace trigger menetlevel_seq
+  before 
+  on  
+  for each row
+declare
+  -- local variables here
+begin
+  ;
+end menetlevel_seq;
+/

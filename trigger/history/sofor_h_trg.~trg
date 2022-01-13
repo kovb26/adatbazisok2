@@ -1,0 +1,10 @@
+create or replace trigger sofor_h_trg
+  before 
+  on  
+  for each row
+declare
+  -- local variables here
+begin
+  sfsf;
+end sofor_h_trg;
+/
