@@ -11,8 +11,8 @@ BEGIN
   IF deleting
   THEN
     insert into szerelveny_h(szerelveny_id,
-                             vontato_rendszam,
-                             utanfuto_rendszam,
+                             vontato_id,
+                             utanfuto_id,
                              szallitott_autok,
                              last_mod,
                              created,
@@ -21,8 +21,8 @@ BEGIN
                              version)
     values(
     :old.szerelveny_id
-    ,:old.vontato_rendszam
-    ,:old.utanfuto_rendszam
+    ,:old.vontato_id
+    ,:old.utanfuto_id
     ,:old.szallitott_autok
     ,v_mod_time
     ,:old.created
@@ -32,8 +32,8 @@ BEGIN
     
   ELSE
    insert into szerelveny_h(szerelveny_id,
-                            vontato_rendszam,
-                            utanfuto_rendszam,
+                            vontato_id,
+                            utanfuto_id,
                             szallitott_autok,
                             last_mod,
                             created,
@@ -43,8 +43,8 @@ BEGIN
          
     values(
     :new.szerelveny_id
-    ,:new.vontato_rendszam
-    ,:new.utanfuto_rendszam
+    ,:new.vontato_id
+    ,:new.utanfuto_id
     ,:new.szallitott_autok
     ,:new.last_mod
     ,:new.created

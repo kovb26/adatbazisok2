@@ -18,4 +18,3 @@ values(6, 'kmk006', 'uab004', 2);
 
 select * from szerelveny;
 
-//szerelveny tabla hozzaadva

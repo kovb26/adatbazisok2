@@ -1,0 +1,2 @@
+alter table szerelveny
+add constraint vontato_fk foreign key (vontato_id) references jarmu(jarmu_id);

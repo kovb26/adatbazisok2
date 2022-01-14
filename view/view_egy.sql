@@ -11,9 +11,9 @@ select m.menetlevel_id,
   join sofor s
     on s.sofor_id = m.sofor_id
   join jarmu jv
-    on jv.rendszam = sz.vontato_rendszam
+    on jv.jarmu_id = sz.vontato_id
   join jarmu ju
-    on ju.rendszam = sz.utanfuto_rendszam
+    on ju.jarmu_id = sz.utanfuto_id
  order by m.menetlevel_id;
  
  select * from view_egy;

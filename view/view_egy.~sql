@@ -3,7 +3,8 @@ select m.menetlevel_id,
        s.nev               as Sofor_nev,
        jv.muszaki_erv      as Vontato_muszaki_ervenyeesseg,
        ju.muszaki_erv      as Utanfuto_muszaki_ervenyesseg,
-       sz.szallitott_autok
+       sz.szallitott_autok,
+       jv.terhelhetoseg + ju.terhelhetoseg as osszterhelhetoseg
   from menetlevel m
   join szerelveny sz
     on sz.szerelveny_id = m.szerelveny_id

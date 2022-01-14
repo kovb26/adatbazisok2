@@ -1,0 +1,5 @@
+create or replace procedure jarmu_delete(Name in out type, Name in out type, ...) is
+begin
+  
+end jarmu_delete;
+/

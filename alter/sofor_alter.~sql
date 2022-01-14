@@ -1,0 +1,2 @@
+alter table sofor
+add constraint sofor_fk foreign key (sofor_id) references menetlevel(sofor_id);

@@ -31,15 +31,15 @@ BEGIN
     ,:old.version + 1);
     
   ELSE
-    insert into szerelveny_h(szerelveny_id,
-                             vontato_rendszam,
-                             utanfuto_rendszam,
-                             szallitott_autok,
-                             last_mod,
-                             created,
-                             mod_user,
-                             dml_flag,
-                             version)
+   insert into szerelveny_h(szerelveny_id,
+                            vontato_rendszam,
+                            utanfuto_rendszam,
+                            szallitott_autok,
+                            last_mod,
+                            created,
+                            mod_user,
+                            dml_flag,
+                            version)
          
     values(
     :new.szerelveny_id
@@ -50,11 +50,10 @@ BEGIN
     ,:new.created
     ,:new.mod_user
     ,:new.dml_flag
-    ,'D'
     ,:new.version);
     
      
     
   END IF;
-END szerelveny_h_trg;
+END ;
 /

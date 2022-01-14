@@ -33,18 +33,25 @@
 @./trigger/history/menetlevel_h_trg.trg
 @./trigger/history/kereskedes_h_trg.trg
 
+--Alter
+
+@./alter/menetlevel_alter.sql
+@./alter/szerelveny_alter.sql
+
 --Táblák feltöltése
 
 @./table/insert/jarmu_insert.sql
 @./table/insert/szerelveny_insert.sql
 @./table/insert/sofor_insert.sql
-@./table/insert/menetlevel_insert.sql
 @./table/insert/kereskedes_insert.sql
+@./table/insert/menetlevel_insert.sql
 
 -- Viewk: 
 
 @./view/view_egy.sql
 @./view/view_ketto.sql
 @./view/view_harom.sql
+@./view/view_negy.sql
+@./view/view_ot.sql
 
 

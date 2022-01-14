@@ -1,8 +1,8 @@
 create table szerelveny_h
 (
         szerelveny_id           number          
-       ,vontato_rendszam        varchar2(10)     
-       ,utanfuto_rendszam       varchar2(10)     
+       ,vontato_id              number     
+       ,utanfuto_id             number 
        ,szallitott_autok        number           
        ,last_mod                timestamp(6)
        ,created                 timestamp(6)
