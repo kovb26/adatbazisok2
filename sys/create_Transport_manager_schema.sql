@@ -18,3 +18,4 @@ GRANT CREATE VIEW TO transport_manager;
 GRANT CREATE SEQUENCE TO transport_manager;
 GRANT CREATE PROCEDURE TO transport_manager;
 GRANT CREATE TRIGGER TO transport_manager;
+GRANT CREATE TYPE TO transport_manager;

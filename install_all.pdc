@@ -21,11 +21,11 @@
 @./sequence/kereskedes_seq.sql
 
 
-@./trigger/jarmu_trg.trg
-@./trigger/szerelveny_trg.trg
-@./trigger/sofor_trg.trg
-@./trigger/menetlevel_trg.trg
-@./trigger/kereskedes_trg.trg
+@./trigger/table/jarmu_trg.trg
+@./trigger/table/szerelveny_trg.trg
+@./trigger/table/sofor_trg.trg
+@./trigger/table/menetlevel_trg.trg
+@./trigger/table/kereskedes_trg.trg
 
 @./trigger/history/jarmu_h_trg.trg
 @./trigger/history/szerelveny_h_trg.trg
@@ -46,6 +46,9 @@
 @./table/insert/kereskedes_insert.sql
 @./table/insert/menetlevel_insert.sql
 
+--Package Exception
+@./package/pkg_exception.spc
+
 --Procedure
          --Delete
 @./procedure/delete/jarmu_delete.prc
@@ -59,7 +62,13 @@
 @./procedure/insert/sofor_insert.prc
 @./procedure/insert/menetlevel_insert.prc
 @./procedure/insert/kereskedes_insert.prc
-
+         --Update
+@./procedure/update/sofor_update.prc
+@./procedure/update/jarmu_update.prc 
+@./procedure/update/szerelveny_update.prc    
+@./procedure/update/menetlevel_update.prc     
+@./procedure/update/kereskedes_update.prc        
+         
 -- Viewk: 
 
 @./view/view_egy.sql
@@ -68,4 +77,5 @@
 @./view/view_negy.sql
 @./view/view_ot.sql
 
-
+-- Function
+@./function/tabla_count.fnc
