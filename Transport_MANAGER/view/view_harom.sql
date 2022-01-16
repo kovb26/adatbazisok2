@@ -11,11 +11,11 @@ select s.nev           as sofor_nev,
     on sz.szerelveny_id = m.szerelveny_id
   join sofor s
     on s.sofor_id = m.sofor_id
-    join kereskedes sk
+  join kereskedes sk
     on sk.kereskedes_id = m.cel_kereskedes
  where sz.szallitott_autok > 2
    AND ck.orszag = 'HU'
    AND sk.orszag = 'HU'
  order by m.menetlevel_id;
- 
- select * from view_harom;
+
+select * from view_harom;

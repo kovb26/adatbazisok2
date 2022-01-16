@@ -1,6 +1,0 @@
-@./table/create/jarmu.sql
-@./table/create/szerelveny.sql
-@./table/create/sofor.sql
-@./table/create/menetlevel.sql
-@./table/create/kereskedes.sql
-

@@ -1,4 +1,4 @@
-create or replace function fnc_szerelveny(p_szerelveny_id number)
+create or replace function fnc_szerelveny(p_menetlevel_id number)
   return type_szerelveny is
   res            type_szerelveny;
 begin
@@ -13,7 +13,7 @@ begin
     from menetlevel m
     join kereskedes ck
       on m.cel_kereskedes = ck.kereskedes_id
-   where m.szerelveny_id = p_szerelveny_id;
+   where m.menetlevel_id = p_menetlevel_id;
   return res;
 end fnc_szerelveny;
 /

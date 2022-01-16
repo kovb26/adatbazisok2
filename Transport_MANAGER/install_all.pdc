@@ -46,28 +46,22 @@
 @./table/insert/kereskedes_insert.sql
 @./table/insert/menetlevel_insert.sql
 
+--type
+@./type/type_menetlevel.typ
+@./type/type_szerelveny.typ
+@./type/type_jarmu.typ
+@./type/type1.typ
+@./type/menetlevel_list.typ
+
 --Package Exception
 @./package/pkg_exception.spc
 
---Procedure
-         --Delete
-@./procedure/delete/jarmu_delete.prc
-@./procedure/delete/szerelveny_delete.prc
-@./procedure/delete/sofor_delete.prc
-@./procedure/delete/menetlevel_delete.prc
-@./procedure/delete/kereskedes_delete.prc
-         --Insert
-@./procedure/insert/jarmu_insert.prc
-@./procedure/insert/szerelveny_insert.prc
-@./procedure/insert/sofor_insert.prc
-@./procedure/insert/menetlevel_insert.prc
-@./procedure/insert/kereskedes_insert.prc
-         --Update
-@./procedure/update/sofor_update.prc
-@./procedure/update/jarmu_update.prc 
-@./procedure/update/szerelveny_update.prc    
-@./procedure/update/menetlevel_update.prc     
-@./procedure/update/kereskedes_update.prc        
+--package
+@./package/menetlevel_pkg.pck
+@./package/sofor_pkg.pck
+@./package/kereskedes_pkg.pck
+@./package/szerelveny_pkg.pck
+@./package/jarmu_pkg.pck
          
 -- Viewk: 
 
@@ -79,3 +73,7 @@
 
 -- Function
 @./function/tabla_count.fnc
+@./function/exp_inp.fnc
+@./function/fnc_jarmu.fnc
+@./function/fnc_szerelveny.fnc
+
