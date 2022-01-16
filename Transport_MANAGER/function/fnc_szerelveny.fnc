@@ -1,6 +1,6 @@
 create or replace function fnc_szerelveny(p_menetlevel_id number)
   return type_szerelveny is
-  res            type_szerelveny;
+  res type_szerelveny;
 begin
   res := type_szerelveny();
 

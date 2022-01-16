@@ -1,3 +1,11 @@
+
+--Sequence
+@./sequence/jarmu_seq.sql
+@./sequence/szerelveny_seq.sql
+@./sequence/sofor_seq.sql
+@./sequence/menetlevel_seq.sql
+@./sequence/kereskedes_seq.sql
+
 -- Táblák instalálása...
 @./table/create/jarmu.sql
 @./table/create/szerelveny.sql
@@ -12,15 +20,31 @@
 @./table/create_h/menetlevel_h.sql
 @./table/create_h/kereskedes_h.sql
 
--- Audit létrehozásáa
+--type
+@./type/type_menetlevel.typ
+@./type/type_szerelveny.typ
+@./type/type_jarmu.typ
+@./type/type_ossztomeg.typ
+@./type/menetlevel_list.typ
 
-@./sequence/jarmu_seq.sql
-@./sequence/szerelveny_seq.sql
-@./sequence/sofor_seq.sql
-@./sequence/menetlevel_seq.sql
-@./sequence/kereskedes_seq.sql
+--Package Exception
+@./package/pkg_exception.spc
 
+-- Function
+@./function/tabla_count.fnc
+@./function/exp_inp.fnc
+@./function/fnc_jarmu.fnc
+@./function/fnc_szerelveny.fnc
+@./function/fnc_ossztomeg.fnc
 
+--package
+@./package/menetlevel_pkg.pck
+@./package/sofor_pkg.pck
+@./package/kereskedes_pkg.pck
+@./package/szerelveny_pkg.pck
+@./package/jarmu_pkg.pck
+
+--Trigger audit
 @./trigger/table/jarmu_trg.trg
 @./trigger/table/szerelveny_trg.trg
 @./trigger/table/sofor_trg.trg
@@ -32,6 +56,15 @@
 @./trigger/history/sofor_h_trg.trg
 @./trigger/history/menetlevel_h_trg.trg
 @./trigger/history/kereskedes_h_trg.trg
+
+--Trigger feladat
+@./trigger/feladat/cel_nap.trg
+@./trigger/feladat/jogositvany_erv.trg
+
+BEGIN
+  dbms_utility.compile_schema(schema => 'Transport_MANAGER');
+END;
+/
 
 --Alter
 
@@ -46,34 +79,24 @@
 @./table/insert/kereskedes_insert.sql
 @./table/insert/menetlevel_insert.sql
 
---type
-@./type/type_menetlevel.typ
-@./type/type_szerelveny.typ
-@./type/type_jarmu.typ
-@./type/type1.typ
-@./type/menetlevel_list.typ
-
---Package Exception
-@./package/pkg_exception.spc
-
---package
-@./package/menetlevel_pkg.pck
-@./package/sofor_pkg.pck
-@./package/kereskedes_pkg.pck
-@./package/szerelveny_pkg.pck
-@./package/jarmu_pkg.pck
-         
 -- Viewk: 
-
 @./view/view_egy.sql
 @./view/view_ketto.sql
 @./view/view_harom.sql
 @./view/view_negy.sql
 @./view/view_ot.sql
 
--- Function
-@./function/tabla_count.fnc
-@./function/exp_inp.fnc
-@./function/fnc_jarmu.fnc
-@./function/fnc_szerelveny.fnc
+
+commit;
+
+
+
+
+         
+
+
+
+
+
+
 

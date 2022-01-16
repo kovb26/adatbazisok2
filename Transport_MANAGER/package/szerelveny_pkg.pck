@@ -11,8 +11,6 @@ create or replace package szerelveny_pkg is
                               p_vontato_id       number,
                               p_utanfuto_id      number,
                               p_szallitott_autok number);
-                              
-                               
 
 end szerelveny_pkg;
 /
@@ -70,10 +68,6 @@ create or replace package body szerelveny_pkg is
      where sz.szerelveny_id = p_szerelveny_id;
   
   end szerelveny_update;
-
- 
-  
-  
 
 end szerelveny_pkg;
 /

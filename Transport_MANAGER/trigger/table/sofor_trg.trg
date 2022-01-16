@@ -2,19 +2,16 @@ CREATE OR REPLACE TRIGGER sofor_trg
   BEFORE INSERT OR UPDATE ON sofor
   FOR EACH ROW
 BEGIN
-  IF inserting
-  THEN
-    IF :new.sofor_id IS NULL
-    THEN
+  IF inserting THEN
+    IF :new.sofor_id IS NULL THEN
       :new.sofor_id := sofor_seq.nextval;
     END IF;
   
-    :new.created    := SYSDATE;
-    :new.dml_flag   := 'I';
-    :new.version    := 1;
+    :new.created  := SYSDATE;
+    :new.dml_flag := 'I';
+    :new.version  := 1;
   ELSE
-    IF nvl(:new.dml_flag, 'U') <> 'D'
-    THEN
+    IF nvl(:new.dml_flag, 'U') <> 'D' THEN
       :new.dml_flag := 'U';
     END IF;
   

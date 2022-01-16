@@ -17,7 +17,7 @@ create or replace package jarmu_pkg is
                          p_terhelhetoseg number,
                          p_evjarat       number,
                          p_muszaki_erv   date);
-                         
+
 end jarmu_pkg;
 /
 create or replace package body jarmu_pkg is
@@ -104,8 +104,6 @@ create or replace package body jarmu_pkg is
      where j.jarmu_id = p_jarmu_id;
   
   end;
-
-  
 
 end jarmu_pkg;
 /

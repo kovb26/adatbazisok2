@@ -15,19 +15,22 @@ create or replace package pkg_exception is
   no_jarmu_found_exception exception;
   gc_no_jarmu_found_exc_code constant number := -20200;
   pragma exception_init(no_jarmu_found_exception, -20200);
-  
+
   no_szerelveny_found_exception exception;
   gc_no_szerelv_found_exc_code constant number := -20300;
   pragma exception_init(no_szerelveny_found_exception, -20300);
-  
+
   no_mlevel_found_exception exception;
   gc_no_mlevel_found_exc_code constant number := -20400;
   pragma exception_init(no_mlevel_found_exception, -20400);
-  
+
   no_kereskedes_found_exception exception;
   gc_no_ker_found_exc_code constant number := -20500;
   pragma exception_init(no_kereskedes_found_exception, -20500);
 
+  nem_ervenyes_exception exception;
+  gc_nem_ervenyes_exc_code constant number := -20600;
+  pragma exception_init(nem_ervenyes_exception, -20600);
 
 end pkg_exception;
 /

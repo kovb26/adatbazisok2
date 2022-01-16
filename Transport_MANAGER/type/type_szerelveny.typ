@@ -12,8 +12,8 @@ create or replace type body type_szerelveny is
 
   constructor function type_szerelveny return self as result is
   begin
-  return;
-end;
+    return;
+  end;
 
 end;
 /

@@ -9,7 +9,6 @@ create or replace type type_jarmu as object
 /
 create or replace type body type_jarmu is
 
-  -- Member procedures and functions
   constructor function type_jarmu return self as result is
   begin
     return;
